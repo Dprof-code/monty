@@ -47,6 +47,9 @@ int add_node(stack_t **stack, int n)
 
     *stack = new;
 
+    free (new);
+    free (*stack);
+
     return (EXIT_SUCCESS);
 }
 

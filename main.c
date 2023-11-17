@@ -57,7 +57,7 @@ int parse_file(FILE *file, stack_t **stack)
             {
                 fprintf(stderr, "L%u: unknown instruction %s\n", line_number, opcode);
                 free(line);
-                return (EXIT_FAILURE);
+                exit (EXIT_FAILURE);
             }
         }
     }
